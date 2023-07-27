@@ -21,7 +21,7 @@ clear && apt install -y  xserver-xorg-core xfonts-base mesa-utils
 clear && apt install -y  acpid ntpdate rcconf
 
 # Packages installation [i3]
-clear && apt install -y i3-wm sddm picom unclutter conman
+clear && apt install -y i3-wm lxdm picom unclutter connman
 
 # Packages installation [Dev]
 clear && apt install -y build-essential module-assistant fakeroot kernel-package libncurses5-dev
@@ -35,8 +35,8 @@ clear && apt install -y xserver-xorg-video-intel
 # Enable/Restart NetworkManager [managed -> true]
 # nano /etc/NetworkManager/NetworkManager.conf && /etc/init.d/network-manager restart
 
-clear && systemctl enable sddm
-clear && systemctl enable conman
+# clear && systemctl enable sddm
+clear && systemctl enable connman
 
 # Reboot computer
-shutdown -r now
+systemctl reboot
