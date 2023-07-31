@@ -22,7 +22,7 @@ clear && apt install -y  acpid ntpdate rcconf
 
 # Packages installation [i3]
 clear && apt install -y i3-wm picom unclutter connman
-clear && apt-get install sddm --no-install-recommends
+clear && apt-get install -y sddm --no-install-recommends
 
 # Packages installation [Dev]
 clear && apt install -y build-essential module-assistant fakeroot kernel-package libncurses5-dev
