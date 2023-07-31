@@ -26,6 +26,7 @@ clear && apt-get install -y sddm --no-install-recommends
 
 # Packages installation [Dev]
 clear && apt install -y build-essential module-assistant fakeroot kernel-package libncurses5-dev
+clear && apt install -y install libgtk-3-0 libblkid1 liblzma5 libbluetooth-dev glibc-source
 
 # Packages installation [intel]
 clear && apt install -y xserver-xorg-video-intel
