@@ -31,11 +31,9 @@ clear && apt install -y libgtk-3-0 libblkid1 liblzma5 libbluetooth-dev glibc-sou
 # Packages installation [intel]
 clear && apt install -y xserver-xorg-video-intel
 
-# Firefox installation
-# clear && wget $FIREFOXURL/$FIREFOX && tar xjf $FIREFOX -C /opt && rm $FIREFOX
-
-# Enable/Restart NetworkManager [managed -> true]
-# nano /etc/NetworkManager/NetworkManager.conf && /etc/init.d/network-manager restart
+# Alacritty installation
+clear && apt install -y alacritty
+sed -i 's/i3-sensible-terminal/alacritty/' ~/.config/i3/config
 
 clear && systemctl enable sddm
 clear && systemctl enable connman
