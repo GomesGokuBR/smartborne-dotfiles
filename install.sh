@@ -37,7 +37,7 @@ sed -i 's/i3-sensible-terminal/alacritty/' ~/.config/i3/config
 
 # Unclutter configuration
 sed -i -e '$a\\n# Unclutter configuration'
-sed -i -e '$a exec --no-startup-id unclutter -idle 0'
+sed -i -e '$a exec --no-startup-id unclutter -idle 0 &'
 
 clear && systemctl enable sddm
 clear && systemctl enable connman
