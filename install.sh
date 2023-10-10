@@ -35,6 +35,10 @@ clear && apt install -y xserver-xorg-video-intel
 clear && apt install -y alacritty
 sed -i 's/i3-sensible-terminal/alacritty/' ~/.config/i3/config
 
+# Unclutter configuration
+sed -i -e '$a\\n# Unclutter configuration'
+sed -i -e '$a unclutter -idle 0 &'
+
 clear && systemctl enable sddm
 clear && systemctl enable connman
 
