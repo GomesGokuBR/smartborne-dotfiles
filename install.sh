@@ -21,8 +21,10 @@ clear && apt install -y  xserver-xorg-core xfonts-base mesa-utils x11-xserver-ut
 clear && apt install -y  acpid ntpdate rcconf
 
 # Packages installation [i3]
-clear && apt install -y i3-wm picom unclutter connman
 clear && apt-get install -y sddm --no-install-recommends
+clear && apt install -y i3-wm
+clear && apt install -y picom unclutter connman
+
 
 # Packages installation [Dev]
 clear && apt install -y build-essential module-assistant fakeroot libncurses5-dev
