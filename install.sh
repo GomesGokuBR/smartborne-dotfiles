@@ -63,7 +63,7 @@ chmod +x back-end/sb-scan/sb_scan
 systemctl link back-end/sb-scan-module/sb_scan.service
 
 chmod +x back-end/sb-controller/sb_controller
-systemctl link back-end/sb-core/c.service
+systemctl link back-end/sb-core/sb_controller.service
 
 chmod +x back-end/sb-core/smartborne_desktop_app
 systemctl link back-end/sb-core/sb_core.service
