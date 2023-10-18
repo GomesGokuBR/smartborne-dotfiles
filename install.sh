@@ -65,18 +65,22 @@ sleep 1
 # Create services
 chmod +x back-end/sb-scan/sb_scan
 systemctl link back-end/sb-scan/sb_scan.service
+systemctl enable sb_scan.service
 sleep 1
 
 chmod +x back-end/sb-controller/sb_controller
 systemctl link back-end/sb-controller/sb_controller.service
+systemctl enable sb_controller.service
 sleep 1
 
 chmod +x back-end/sb-core/sb_core
 systemctl link back-end/sb-core/sb_core.service
+systemctl enable sb_core.service
 sleep 1
 
 chmod +x front-end/smartborne_desktop_app
 systemctl link front-end/sb_ui.service
+systemctl enable sb_ui.service
 sleep 1
 
 # Reboot computer
