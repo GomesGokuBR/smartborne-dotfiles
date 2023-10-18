@@ -46,38 +46,38 @@ cd /home/pygma/apps
 wget https://apps-sources.s3.fr-par.scw.cloud/sm.zip
 unzip sm.zip
 rm sm.zip
-sleep 5
+sleep 1
 
 cp ./libBxlPosAPI.so.1.1.7 /usr/lib/
 cp ./libBxlPosAPI_v1.1.7.a /usr/lib/
 ln -sf /usr/lib/libBxlPosAPI.so.1.1.7 /usr/lib/libBxlPosAPI.so
-sleep 5
+sleep 1
 
 cp ./libBxlPosAPI.so.1.1.7 /usr/lib64/
 cp ./libBxlPosAPI_v1.1.7.a /usr/lib64/
 ln -sf /usr/lib64/libBxlPosAPI.so.1.1.7 /usr/lib64/libBxlPosAPI.so
-sleep 5
+sleep 1
 
 rm libBxlPosAPI.so.1.1.7
 rm libBxlPosAPI_v1.1.7.a
-sleep 5
+sleep 1
 
 # Create services
 chmod +x back-end/sb-scan/sb_scan
 systemctl link back-end/sb-scan/sb_scan.service
-sleep 5
+sleep 1
 
 chmod +x back-end/sb-controller/sb_controller
 systemctl link back-end/sb-controller/sb_controller.service
-sleep 5
+sleep 1
 
 chmod +x back-end/sb-core/sb_core
 systemctl link back-end/sb-core/sb_core.service
-sleep 5
+sleep 1
 
 chmod +x front-end/smartborne_desktop_app
 systemctl link front-end/sb_ui.service
-sleep 5
+sleep 1
 
 # Reboot computer
 systemctl reboot
