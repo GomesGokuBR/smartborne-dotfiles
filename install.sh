@@ -64,7 +64,7 @@ sleep 5
 
 # Create services
 chmod +x back-end/sb-scan/sb_scan
-systemctl link back-end/sb-scan-module/sb_scan.service
+systemctl link back-end/sb-scan/sb_scan.service
 sleep 5
 
 chmod +x back-end/sb-controller/sb_controller
