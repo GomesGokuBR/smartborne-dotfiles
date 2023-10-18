@@ -68,10 +68,10 @@ systemctl link back-end/sb-scan/sb_scan.service
 sleep 5
 
 chmod +x back-end/sb-controller/sb_controller
-systemctl link back-end/sb-core/sb_controller.service
+systemctl link back-end/sb-controller/sb_controller.service
 sleep 5
 
-chmod +x back-end/sb-core/smartborne_desktop_app
+chmod +x back-end/sb-core/sb_core
 systemctl link back-end/sb-core/sb_core.service
 sleep 5
 
